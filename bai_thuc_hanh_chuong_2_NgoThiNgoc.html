@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Thêm sinh viên</h2>
+    <form>
+        <label for="maSV">Mã sinh viên:</label><br>
+        <input type="text" id="maSV" name="maSV" required><br><br>
+
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="birth">Ngày sinh:</label>
+        <input type="date" id="birth" name="birth"><br><br>
+
+        <label>Giới tính:</label>
+        <input type="radio" id="nam" name="gtinh" value="Nam">
+        <label for="nam">Nam</label>
+        <input type="radio" id="nu" name="gtinh" value="Nữ">
+        <label for="nu">Nữ</label><br><br>
+
+        <label for="note">Ghi chú:</label><br>
+        <textarea id="note" name="note" rows="3" cols="26"></textarea><br><br>
+
+        <button type="submit">Thêm sinh viên</button>
+    </form>
+
+    <form>
+        <h2>Danh sách sinh viên</h2>
+        <table border="2" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>STT</th>
+      <th>Mã SV</th>
+      <th>Họ tên</th>
+      <th>Email</th>
+      <th>Giới tính</th>
+      <th>Ngày sinh</th>
+      <th>Chức năng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>001</td>
+      <td>Ngô Thị Ngọc</td>
+      <td>ngoc@gmail.com</td>
+      <td>Nữ</td>
+      <td>10-10-2004</td>
+      <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>002</td>
+      <td>Trần Thanh Kim Huệ</td>
+      <td>hue@gmail.com</td>
+      <td>Nữ</td>
+      <td>15-07-2004</td>
+      <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>003</td>
+      <td>Nguyễn Thanh Hải</td>
+      <td>hai@gmail.com</td>
+      <td>Nam</td>
+      <td>23-10-2003</td>
+      <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+    </tr>
+  </tbody>
+</table>
+    </form>
+
+</body>
+</html>
