@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 + Bài 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h2>Bài 3_Bảng dữ liệu</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th rowspan="2" colspan="2">Student</th>
+        <th colspan="4">Exam</th>
+        <th colspan="4">2nd Exam</th>
+        <th colspan="2" rowspan="2">Final Grade</th>
+      </tr>
+      <tr>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th rowspan="2">Grade</th>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th rowspan="2">Grade</th>
+      </tr>
+      <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>8</th>
+        <th>7</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>NR</th>
+        <th>R</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>80549061</td>
+        <td>John</td>
+        <td>70%</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>17.6</td>
+        <th colspan="4"></th>
+        <td>17.6</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>80549062</td>
+        <td>Mary</td>
+        <td>10%</td>
+        <td>50%</td>
+        <td>50%</td>
+        <td>6.8</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>50%</td>
+        <td>16.5</td>
+        <td>16.5</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>80549063</td>
+        <td>Claire</td>
+        <th colspan="4"></th>
+        <td>50%</td>
+        <td>50%</td>
+        <td>50%</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+    </table><br><br>
+
+
+    <div>
+        <h2>Bài 4</h2>
+        <fieldset>
+            <h2>Basic Info</h2><hr>
+            <form>
+                <div>
+                    <label for="Id"><strong>Employee ID</strong></label>
+                    <span><input type="text" id="Id" name="Id" value="9" readonly></span><br><br>
+                </div>
+
+                <div>
+                    <label for="LastName"><strong>Name</strong></label>
+                    <span><input type="text" id="LastName" name="LastName" value="Dodsworth"></span><br><br>
+                </div>
+
+                <div>
+                    <label for="FirstName"><strong>First Name</strong></label>
+                    <span><input type="text" id="FirstName" name="FirstName" value="Anne"></span><br><br>
+                </div>
+
+                <div>
+                    <label><strong>Gender</strong></label><br>
+                    <span>
+                        <input type="radio" name="gender" value="male" id="Male"> <label for="Male">Male</label><br>
+                        <input type="radio" name="gender" value="female" id="Female"> <label for="Female">Female</label><br>
+                        <input type="radio" name="gender" value="xxx" id="XXX"> <label for="XXX">XXX</label><br>
+                        <input type="radio" name="gender" value="zzz" id="ZZZ" checked> <label for="ZZZ">ZZZ</label><br>
+                    </span>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="title"><strong>Title</strong></label>
+                    <span><input type="text" id="title" name="title" value="Sales Representative"></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="suffix"><strong>Suffix</strong></label>
+                    <span><input type="text" id="suffix" name="suffix" value="Ms."></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="birth"><strong>BirthDate</strong></label>
+                    <span><input type="text" id="birth" name="birth" value="1969-07-02 00:00:00"></span>
+                    <span> (?)</span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="hireDate"><strong>HireDate</strong></label>
+                     <span><input type="text" id="hire" name="hire" value="1994-11-15 00:00:00"></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="ssn"><strong>SSN # (if applicable)</strong></label>
+                    <span><input type="text" id="ssn" name="ssn"></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="ReportsTo"><strong>Reports To</strong></label>
+                    <span>
+                        <select id="ReportsTo" name="ReportsTo">
+                            <option value="buchanan">Buchanan</option>
+                            <option value="ABC">ABC</option>
+                            <option value="DEF">DEF</option>
+                        </select>
+                    </span>
+                    <br><br>
+                </div>
+
+                <h2>Contact Info</h2><hr>
+
+                <div>
+                    <label for="email"><strong>Email</strong></label>
+                    <span><input type="email" id="email" name="email" placeholder="name@example.com"></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="address"><strong>Address</strong></label>
+                    <span><input type="text" id="address" name="address" value="7 Houndstooth Rd."></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="city"><strong>City</strong></label>
+                    <span><input type="text" id="city" name="city" value="London"></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="region"><strong>Region</strong></label>
+                    <span><input type="text" id="region" name="region"></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="PCode"><strong>Postal Code</strong></label>
+                    <span><input type="text" id="PCode" name="PCode" value="WG2 7LT"></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="country"><strong>Country</strong></label>
+                    <span>
+                        <select id="country" name="country">
+                            <option value="russian_federation">Russian Federation</option>
+                            <option value="Rome">Rome</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="usHomePhone"><strong>US Home Phone</strong></label>
+                    <span><input type="tel" id="usHomePhone" name="usHomePhone" value="(234)234-2342"></span>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="photo"><strong>Photo</strong></label>
+                    <span><input type="text" id="photo" name="photo" value="EmpID9.bmp"></span>
+                    <br><br>
+                </div>
+
+                <h2>Optional Info</h2><hr>
+                <form action="">
+                <table  cellspacing="0" cellpadding="10">
+                <tr>
+                    <th width="140">Notes</th>
+                    <td>
+                        <button><i class="fa-solid fa-bold"></i></button>
+                        <button><i class="fa-solid fa-italic"></i></button>
+                        <button><i class="fa-solid fa-underline"></i></button>
+                        <button><i class="fa-solid fa-strikethrough"></i></button>
+                        <button><i class="fa-solid fa-align-left"></i></button>
+                        <button><i class="fa-solid fa-align-center"></i></button>
+                        <button><i class="fa-solid fa-align-right"></i></button>
+                        <button><i class="fa-solid fa-align-justify"></i></button>
+                        <button><i class="fa-solid fa-subscript"></i></button>
+                        <button><i class="fa-solid fa-superscript"></i></button>
+                        <button><i class="fa-solid fa-undo"></i></button>
+                        <button><i class="fa-solid fa-redo"></i></button>
+                        <button><i class="fa-solid fa-list-ul"></i></button>
+                        <button><i class="fa-solid fa-list-ol"></i></button><br>
+                        <button><i class="fa-solid fa-table"></i></button>
+                        <button><i class="fa-solid fa-indent"></i></button>
+                        <button><i class="fa-solid fa-outdent"></i></button>
+                        <button><i class="fa-solid fa-print"></i></button>
+                        <button><i class="fa-solid fa-link"></i></button>
+                        <button><i class="fa-solid fa-image"></i></button>
+                        <button><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button><i class="fa-solid fa-times"></i></button>
+                        <button><i class="fa-solid fa-solid fa-heading"></i></button>
+                        <br><textarea name="note" id="note" cols="52" rows="7">Anne has a BA degree in English form St. Lawrence College. She is fluent in Freanch and German.ZZZ</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Referred Shift</th>
+                    <td>
+                        <input type="checkbox" name="shift" id="regular"><label for="regular">Regular</label><br>
+                        <input type="checkbox" name="shift" id="gravy" checked><label for="gravy">Gravy Yard</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Active?</th>
+                    <td><input type="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>TIDAWO</td>
+                </tr>
+                <tr>
+                    <th>Are you human?</th>
+                    <td>Click to change</td><br>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="text" name="" id="" size="60"></td>
+                </tr>
+            </table>
+            
+            <hr>
+            <div>
+                <button type="submit"><i class="fa-solid fa-print"></i> Submit</button>
+                <button type="button"><i class="fa-solid fa-times"></i> Cancel</button>
+            </div><br>
+
+            <div>
+                <button type="Trai">&lt;</button>
+                <button type="Phai">&gt;</button>
+            </div>
+
+            <div>* required</div>
+        </fieldset>
+    </div> 
+</body>
+</html>
