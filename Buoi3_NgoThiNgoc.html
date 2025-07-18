@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form thêm và Bảng danh sách sinh viên</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      background-color: #3c8098;
+      color: white;
+      padding: 10px;  
+      border-radius: 5px;
+    }
+
+    .form-container {
+      margin: 0px auto;
+      padding: 20px;
+      width: 100%;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    input:not([type="radio"]),
+    textarea {
+      width: 350px;
+      padding: 6px;
+      margin-bottom: 12px;
+      text-align: left;
+    }
+
+
+    textarea {
+      resize: none;
+      width: 475px;
+    }
+
+    button {
+      display: block;
+      padding: 13px 16px;
+      background-color: #3c8098;
+      font-size: 16px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    button:hover {
+      background-color: #27b52e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    form {
+      padding: 20px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    thead th {
+      background-color: #74d6e8;
+    }
+
+    tbody tr:hover {
+      background-color: #f9f9f9;
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: none;
+      color: #002aff;
+    }
+
+    a:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    <form class="form-container">
+      <h2 style="text-align: center;">Thêm sinh viên</h2>
+      <label for="maSV">Mã sinh viên:</label>
+      <input type="text" id="maSV" name="maSV" required><br><br>
+
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="birth">Ngày sinh:</label>
+      <input type="date" id="birth" name="birth"><br><br>
+
+      <label>Giới tính:</label>
+      <input type="radio" id="nam" name="gtinh" value="Nam">
+      <label for="nam">Nam</label>
+      <input type="radio" id="nu" name="gtinh" value="Nữ">
+      <label for="nu">Nữ</label><br><br>
+
+      <label style="display: block;" for="note">Ghi chú:</label>
+      <textarea id="note" name="note" rows="4" cols="40"></textarea><br>
+
+      <button type="submit">Thêm sinh viên</button>
+    </form>
+
+  <form>
+    <fieldset>
+      <h2>Danh sách sinh viên</h2>
+      <table border="2" cellspacing="0" cellpadding="5">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>Chức năng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>001</td>
+            <td>Ngô Thị Ngọc</td>
+            <td>ngoc@gmail.com</td>
+            <td>Nữ</td>
+            <td>10-10-2004</td>
+            <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>002</td>
+            <td>Trần Thanh Kim Huệ</td>
+            <td>hue@gmail.com</td>
+            <td>Nữ</td>
+            <td>15-07-2004</td>
+            <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>003</td>
+            <td>Nguyễn Thanh Hải</td>
+            <td>hai@gmail.com</td>
+            <td>Nam</td>
+            <td>23-10-2003</td>
+            <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </form>
+</body>
+</html>
