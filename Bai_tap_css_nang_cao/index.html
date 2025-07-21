@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QLSV</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  bg-light fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">TLU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+                    <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Thông báo&Tuyển sinh</a>
+                    </li><li class="nav-item"><a class="nav-link" href="#">Sinh viên</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ngành</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Công nghệ thông tin</a></li>
+                            <li><a class="dropdown-item" href="#">Kinh tế</a></li>
+                            <li><a class="dropdown-item" href="#">Tài nguyên môi trường</a></li>
+                            <li><a class="dropdown-item" href="#">Cơ khí</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Tìm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <form class="p-3 border rounded bg-light">
+                <h2 class="text-center mb-3">Thêm sinh viên</h2>
+
+                <div class="mb-2">
+                    <label for="maSV">Mã sinh viên:</label>
+                    <input type="text" id="maSV" name="maSV" class="form-control" required />
+                </div>
+
+                <div class="mb-2">
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" class="form-control" required />
+                </div>
+
+                <div class="mb-2">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required />
+                </div>
+
+                <div class="mb-2">
+                    <label for="birth">Ngày sinh:</label>
+                    <input type="date" id="birth" name="birth" class="form-control" />
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label">Giới tính:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="nam" name="gtinh" value="Nam" />
+                        <label class="form-check-label" for="nam">Nam</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="nu" name="gtinh" value="Nữ" />
+                        <label class="form-check-label" for="nu">Nữ</label>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <label for="note">Ghi chú:</label>
+                    <textarea id="note" name="note" rows="4" class="form-control"></textarea>
+                </div>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-success me-4" >Thêm sinh viên</button>
+                </div>
+                </form>
+            </div> <br><br>
+
+            <div class="col-md-7">
+                <div class="bg-light p-1 rounded shadow">
+                    <h2 class="mb-4 text-center">Danh sách sinh viên</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover text-center align-middle w-100">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Mã SV</th>
+                                    <th>Họ tên</th>
+                                    <th>Email</th>
+                                    <th>Giới tính</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Chức năng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>001</td>
+                                    <td>Ngô Thị Ngọc</td>
+                                    <td>ngoc@gmail.com</td>
+                                    <td>Nữ</td>
+                                    <td>10-10-2004</td>
+                                    <td class="text-center">
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <button class="btn btn-info">Sửa</button>
+                                            <button class="btn btn-danger">Xóa</button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>002</td>
+                                    <td>Trần Thanh Kim Huệ</td>
+                                    <td>hue@gmail.com</td>
+                                    <td>Nữ</td>
+                                    <td>15-07-2004</td>
+                                    <td class="text-center">
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <button class="btn btn-info">Sửa</button>
+                                            <button class="btn btn-danger">Xóa</button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td>003</td>
+                                    <td>Nguyễn Thanh Hải</td>
+                                    <td>hai@gmail.com</td>
+                                    <td>Nam</td>
+                                    <td>23-10-2003</td>
+                                    <td class="text-center">
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <button class="btn btn-info">Sửa</button>
+                                            <button class="btn btn-danger">Xóa</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
