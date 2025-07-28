@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form thêm và Bảng danh sách sinh viên</title>
+  <link rel="stylesheet" href="b7.css" />
+  <script defer src="b7.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="row justify-content-center g-4">
+    <div class="col-md-4">
+      <form id="formSV" class="form-container">
+        <h2 style="text-align: center;">Thêm sinh viên</h2>
+        
+        <label for="maSV">Mã sinh viên:</label>
+        <input type="text" id="maSV" name="maSV" required><br>
+
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="birth">Ngày sinh:</label>
+        <input type="date" id="birth" name="birth" required><br>
+
+        <div class="mb-3">
+            <label class="form-label d-block">Giới tính</label>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gioitinh" value="Nam" id="nam">
+            <label class="form-check-label" for="nam">Nam</label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gioitinh" value="Nữ" id="nu">
+            <label class="form-check-label" for="nu">Nữ</label>
+            </div>
+        </div>
+
+        <button type="button" id="btnThem">Thêm sinh viên</button>
+        <div id="thongBao"></div>
+      </form>
+    </div>
+
+    <div class="col-md-7">
+      <form>
+        <fieldset>
+          <h2>Danh sách sinh viên</h2>
+          <table id="bangSinhVien">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Chức năng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>001</td>
+                <td>Ngô Thị Ngọc</td>
+                <td>ngoc@gmail.com</td>
+                <td>Nữ</td>
+                <td>10-10-2004</td>
+                <td>
+                  <a href="#" class="sua">Sửa</a> | <a href="#" class="xoa">Xoá</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
