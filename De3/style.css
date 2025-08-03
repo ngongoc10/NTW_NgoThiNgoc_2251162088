@@ -1,0 +1,48 @@
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.btn-add {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-add i {
+  margin-right: 5px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+}
+
+.modal-footer .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.modal-footer .btn-secondary {
+  border: none;
+}
+
+.footer {
+    background-color: #002e60;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
